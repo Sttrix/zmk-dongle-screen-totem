@@ -1,22 +1,19 @@
-# This file generates the GitHub Actions matrix
 ---
 include:
-  # totem
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: totem_central_dongle dongle_display
     artifact-name: totem_central_dongle
-  - board: seeeduino_xiao_ble
-    shield: totem_central_left
-    artifact-name: totem_central_left
-  - board: seeeduino_xiao_ble
+
+  - board: xiao_ble//zmk
     shield: totem_peripheral_left
     artifact-name: totem_peripheral_left
-  - board: seeeduino_xiao_ble
+
+  - board: xiao_ble//zmk
     shield: totem_peripheral_right
     artifact-name: totem_peripheral_right
-    
-  # reset
-  - board: nice_nano_v2
+
+  - board: nice_nano//zmk
     shield: settings_reset
-  - board: seeeduino_xiao_ble
+
+  - board: xiao_ble//zmk
     shield: settings_reset
