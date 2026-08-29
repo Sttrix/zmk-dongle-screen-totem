@@ -12,6 +12,6 @@ manifest:
     # modules
     - name: zmk-dongle-display
       remote: englmaxi
-      revision: win
+      revision: main
   self:
     path: config
